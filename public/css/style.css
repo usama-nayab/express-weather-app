@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link:hover , .navbar-brand:hover{
+    color: #fff;
+}
+button:focus:not(:focus-visible){
+    box-shadow: none;
+}
+.navbar-toggler i{
+    color: #fff !important;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.custom-btn{
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(226, 181, 19);
+    padding: 7px 12px;
+    border-radius: 19px;
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+}
+.main-menu{background-color: rgb(19, 19, 19);}
+.custom-nav .navbar{
+    background-color: rgb(19, 19, 19);
+}
+.navbar ul li a , .navbar-brand{
+    color: #fff;
+}
+
+.home-hero-left , .home-hero-right{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.carousel-item img{
+    height: 50vh;
+}
+
+footer{
+    background-color: rgb(19, 19, 19);
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.home-hero-left .about-img{
+    width: 65%;
+    display: inline-block;
+    margin: auto;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.5));
+}
+
+.home-hero-right span{
+    color: rgb(226, 181, 19);
+}
+
+/* error page */
+.img-404{
+    text-align: center;
+}
+.img-404 img{
+    width: 50%;
+}
+
+/* weather page */
+.main-form{
+    width: 40vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tempForm{
+    width: 100%;
+    display: flex;
+}
+
+.tempForm input[type="text"] , .tempForm input[type="submit"]{
+    width: 40vw;
+    /* position: absolute; */
+    border: 1px solid #0000005e;
+    border-radius: 25px;
+    padding: 6px 15px ;
+    outline: none;
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+}
+
+.tempForm input[type="submit"]{
+    background-color: rgb(226, 181, 19);
+    /* position: relative; */
+    /* left: 84%; */
+    width: auto;
+    padding: 4px 15px ;
+    margin: 2px 0;
+    margin-left: -90px;
+
+}
+
+.tempBody{
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.dayDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tempStatus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    transition: all 0.7s linear;
+}
+
+#cityName{display: none;}
+#skyDesc{
+    color: #fff;
+}
+
+.weatherDetails #skyDesc i{
+    font-size: 50px;
+}
+
+
+
+/* rosponsiveness begins */
+@media screen and (max-width:992px) {
+    .custom-btn{width: 40%;}
+}
+
+@media screen and (max-width:768px) {
+    .home-hero-left , .home-hero-right{
+        height: auto;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .home-hero-left p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .home-hero-left .custom-btn{
+        margin: 1em auto;
+    }
+    .carousel-item img{
+        width: 50% !important;
+        height: 40vh;
+    }
+    .home-hero-left .about-img{
+        width: 40%;
+    }
+    .home-hero-right .custom-btn{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-form{
+        width: 90vw;
+    }
+    .tempForm input[type="text"]{
+        width: 90vw;
+    }
+    .tempForm input[type="submit"]{
+        left: 70%;
+    }
+    .carousel-item img{
+        width: 70%;
+        height: 32vh;
+    }
+    
+}
+/* rosponsiveness ends */

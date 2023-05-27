@@ -1,0 +1,32 @@
+{{>header}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-11 col-12 mx-auto">
+            <div class="main-form">
+                <form class="tempForm" >
+                <input type="text" id="inputCity" placeholder="Enter City" autocomplete="off">
+                <input id="submitBtn" class="custom-btn" type="submit" value="Search">
+                </form>
+
+                <div class="tempBody">
+                    <div class="dayDetails">
+                        <h6 id="day"></h6>
+                        <h6 id="date"></h6>
+                    </div>
+
+                    <div class="weatherDetails">
+                        <h3 id="output">Get Output Here</h3>
+                        <div id="status" class="tempStatus">
+                        <h2 id="degree">21<sup>o</sup>C</h2>
+                        <p id="skyDesc"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{>footer}}
